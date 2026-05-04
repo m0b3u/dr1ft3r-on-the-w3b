@@ -1,4 +1,4 @@
-# EinCode
+# CyberDr1ft3r
 
 A modern, minimal code editor / playground built with Next.js, React and Radix UI.
 

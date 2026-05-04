@@ -33,7 +33,7 @@ export function generateWebsiteStructuredData(url: string) {
   return {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
-    name: 'EINCODE',
+    name: 'CyberDr1ft3r',
     description: "A digital workshop where code meets curiosity. Experiments, prototypes, and open-source artifacts by Ehsan Ghaffar.",
     url: url,
     author: {
@@ -67,7 +67,7 @@ export function generatePersonStructuredData() {
     jobTitle: 'Software Engineer',
     worksFor: {
       '@type': 'Organization',
-      name: 'EINCODE',
+      name: 'CyberDr1ft3r',
     },
   }
 }
