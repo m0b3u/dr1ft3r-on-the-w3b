@@ -1,7 +1,7 @@
 import { NotesPageContent } from "@/components/public/notes/notes-page-content";
 
 export const metadata = {
-  title: "Lab Notes | EinCode",
+  title: "Lab Notes | CyberDr1ft3r",
   description: "Technical findings, observations, and thoughts from the workbench.",
 };
 

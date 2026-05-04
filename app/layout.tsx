@@ -22,11 +22,13 @@ const spaceGrotesk = Space_Grotesk({
   display: 'swap',
 })
 
+const emojiFavicon = "data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👾</text></svg>"
+
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://eindev.ir'),
   title: {
-    default: "EINCODE — Ehsan Ghaffar's Digital Laboratory",
-    template: "%s | EINCODE",
+    default: "CyberDr1ft3r — Ehsan Ghaffar's Digital Laboratory",
+    template: "%s | CyberDr1ft3r",
   },
   description:
     "A digital workshop where code meets curiosity. Experiments, prototypes, and open-source artifacts by Ehsan Ghaffar.",
@@ -39,21 +41,21 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "/",
-    title: "EINCODE — Ehsan Ghaffar's Digital Laboratory",
+    title: "CyberDr1ft3r — Ehsan Ghaffar's Digital Laboratory",
     description: "A digital workshop where code meets curiosity. Experiments, prototypes, and open-source artifacts by Ehsan Ghaffar.",
-    siteName: "EINCODE",
+    siteName: "CyberDr1ft3r",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "EINCODE — Ehsan Ghaffar's Digital Laboratory",
+        alt: "CyberDr1ft3r — Ehsan Ghaffar's Digital Laboratory",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "EINCODE — Ehsan Ghaffar's Digital Laboratory",
+    title: "CyberDr1ft3r — Ehsan Ghaffar's Digital Laboratory",
     description: "A digital workshop where code meets curiosity. Experiments, prototypes, and open-source artifacts.",
     creator: "@ehsanghaffar",
     images: ["/og-image.png"],
@@ -72,19 +74,12 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: "/icon-light-32x32.png",
-        media: "(prefers-color-scheme: light)",
-      },
-      {
-        url: "/icon-dark-32x32.png",
-        media: "(prefers-color-scheme: dark)",
-      },
-      {
-        url: "/icon.svg",
+        url: emojiFavicon,
         type: "image/svg+xml",
       },
     ],
-    apple: "/apple-icon.png",
+    apple: emojiFavicon,
+    shortcut: emojiFavicon,
   },
   manifest: "/site.webmanifest",
 }
