@@ -9,7 +9,7 @@ import { themes, type ThemeColor } from "@/lib/themes"
 const STORAGE_KEY = "color-theme"
 
 export function ThemeChanger() {
-  const [currentTheme, setCurrentTheme] = useState<ThemeColor>("golden")
+  const [currentTheme, setCurrentTheme] = useState<ThemeColor>("purple")
   const [isOpen, setIsOpen] = useState(false)
   const [mounted, setMounted] = useState(false)
   const { resolvedTheme, systemTheme } = useTheme()
@@ -117,7 +117,7 @@ export function ThemeChanger() {
     golden: "bg-gradient-to-br from-amber-400 to-yellow-600",
     cyan: "bg-gradient-to-br from-cyan-400 to-blue-500",
     purple: "bg-gradient-to-br from-purple-400 to-violet-600",
-    emerald: "bg-gradient-to-br from-purple-400 to-violet-600",
+    emerald: "bg-gradient-to-br from-emerald-400 to-teal-600",
     rose: "bg-gradient-to-br from-rose-400 to-pink-600",
   }
 
