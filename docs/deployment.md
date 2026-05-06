@@ -13,7 +13,7 @@
 \`\`\`bash
 git add .
 git commit -m "Initial commit"
-git remote add origin https://github.com/yourusername/eincode.git
+git remote add origin https://github.com/yourusername/CyberDr1ft3r.git
 git push -u origin main
 \`\`\`
 
@@ -40,9 +40,9 @@ If you add environment variables later:
 \`\`\`env
 # .env.local (local development)
 NEXT_PUBLIC_SITE_URL=http://localhost:3000
-NEXT_PUBLIC_GITHUB_URL=https://github.com/ehsanghaffar
-NEXT_PUBLIC_TWITTER_URL=https://twitter.com/ehsanghaffar
-NEXT_PUBLIC_LINKEDIN_URL=https://linkedin.com/in/ehsanghaffar
+NEXT_PUBLIC_GITHUB_URL=https://github.com/cyberdr1ft3r
+NEXT_PUBLIC_TWITTER_URL=https://x.com/cyberdr1ft3r
+NEXT_PUBLIC_LINKEDIN_URL=https://www.linkedin.com/in/ali-b-26462b401/
 \`\`\`
 
 Add to Vercel:
@@ -55,7 +55,7 @@ Add to Vercel:
 
 1. **Add domain in Vercel**:
    - Project Settings → Domains
-   - Add your domain (e.g., `eindev.ir`)
+   - Add your domain (e.g., `cyberdr1ft3r.com`)
 
 2. **Update DNS**:
    - Add CNAME record: `www` → `cname.vercel-dns.com`
@@ -150,10 +150,10 @@ const nextConfig = {
 3. **Build and run**:
 \`\`\`bash
 # Build image
-docker build -t eincode .
+docker build -t CyberDr1ft3r .
 
 # Run container
-docker run -p 3000:3000 eincode
+docker run -p 3000:3000 CyberDr1ft3r
 \`\`\`
 
 ### VPS Deployment (DigitalOcean, AWS, etc.)
@@ -185,8 +185,8 @@ pnpm --version
 2. **Clone repository**:
 \`\`\`bash
 cd /var/www
-sudo git clone https://github.com/yourusername/eincode.git
-cd eincode
+sudo git clone https://github.com/yourusername/CyberDr1ft3r.git
+cd CyberDr1ft3r
 \`\`\`
 
 3. **Install dependencies & build**:
@@ -201,7 +201,7 @@ pnpm build
 sudo npm install -g pm2
 
 # Start app
-pm2 start pnpm --name "eincode" -- start
+pm2 start pnpm --name "CyberDr1ft3r" -- start
 
 # Save PM2 config
 pm2 save
@@ -216,7 +216,7 @@ pm2 startup
 sudo apt install nginx
 
 # Create config
-sudo nano /etc/nginx/sites-available/eincode
+sudo nano /etc/nginx/sites-available/CyberDr1ft3r
 \`\`\`
 
 \`\`\`nginx
@@ -237,7 +237,7 @@ server {
 
 \`\`\`bash
 # Enable site
-sudo ln -s /etc/nginx/sites-available/eincode /etc/nginx/sites-enabled/
+sudo ln -s /etc/nginx/sites-available/CyberDr1ft3r /etc/nginx/sites-enabled/
 
 # Test config
 sudo nginx -t
@@ -262,7 +262,7 @@ sudo certbot renew --dry-run
 
 \`\`\`bash
 # SSH into server
-cd /var/www/eincode
+cd /var/www/CyberDr1ft3r
 
 # Pull latest
 git pull origin main
@@ -272,7 +272,7 @@ pnpm install
 pnpm build
 
 # Restart
-pm2 restart eincode
+pm2 restart CyberDr1ft3r
 \`\`\`
 
 ## Static Export (Not Recommended)
@@ -359,13 +359,13 @@ Remove `unoptimized: true` from config
 ### 2. Add Caching Headers (Nginx)
 \`\`\`nginx
 location /_next/static {
-    alias /var/www/eincode/.next/static;
+    alias /var/www/CyberDr1ft3r/.next/static;
     expires 365d;
     add_header Cache-Control "public, immutable";
 }
 
 location /static {
-    alias /var/www/eincode/public;
+    alias /var/www/CyberDr1ft3r/public;
     expires 365d;
     add_header Cache-Control "public, immutable";
 }
@@ -421,7 +421,7 @@ Click "Rollback" on previous deployment in Vercel dashboard
 pm2 list
 
 # SSH into server
-cd /var/www/eincode
+cd /var/www/CyberDr1ft3r
 
 # Checkout previous commit
 git log --oneline  # Find commit hash
@@ -430,7 +430,7 @@ git checkout <commit-hash>
 # Rebuild and restart
 pnpm install
 pnpm build
-pm2 restart eincode
+pm2 restart CyberDr1ft3r
 \`\`\`
 
 ## Backup Strategy
@@ -438,7 +438,7 @@ pm2 restart eincode
 ### Database (when added)
 \`\`\`bash
 # Automated daily backups
-0 2 * * * /usr/bin/pg_dump eincode > /backups/eincode-$(date +\%Y\%m\%d).sql
+0 2 * * * /usr/bin/pg_dump CyberDr1ft3r > /backups/CyberDr1ft3r-$(date +\%Y\%m\%d).sql
 \`\`\`
 
 ### Code
@@ -447,7 +447,7 @@ Always in Git - no additional backup needed
 ### Static Assets
 \`\`\`bash
 # rsync to backup server
-rsync -avz /var/www/eincode/public/ backup-server:/backups/eincode-public/
+rsync -avz /var/www/CyberDr1ft3r/public/ backup-server:/backups/CyberDr1ft3r-public/
 \`\`\`
 
 ## Troubleshooting Deployment
@@ -467,7 +467,7 @@ pnpm build
 ### 500 Error in Production
 \`\`\`bash
 # Check PM2 logs
-pm2 logs eincode
+pm2 logs CyberDr1ft3r
 
 # Check Nginx logs
 sudo tail -f /var/log/nginx/error.log
@@ -479,12 +479,12 @@ sudo tail -f /var/log/nginx/error.log
 htop
 
 # Restart app
-pm2 restart eincode
+pm2 restart CyberDr1ft3r
 
 # Clear Next.js cache
 rm -rf .next/cache
 pnpm build
-pm2 restart eincode
+pm2 restart CyberDr1ft3r
 \`\`\`
 
 ---

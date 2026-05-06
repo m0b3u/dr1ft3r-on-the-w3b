@@ -4,35 +4,35 @@ import { Github, ExternalLink } from "lucide-react"
 const wipItems = [
   {
     id: 1,
-    name: "next16-docker-tw4-starter",
-    description: "Next.js 16 starter with App Router, Tailwind v4, Next-Auth v5, and Docker",
+    name: "stackwarden",
+    description: "Security-focused homelab monitoring, exposure notes, and blue-team runbooks",
     progress: 85,
-    lastUpdated: "Dec 2024",
-    url: "https://github.com/ehsanghaffar/next16-docker-tw4-starter",
+    lastUpdated: "May 2026",
+    url: "https://github.com/cyberdr1ft3r",
   },
   {
     id: 2,
-    name: "handbuilt-linux",
-    description: "Minimal Linux distro from scratch with BusyBox and Syslinux bootloader",
+    name: "drift-notes",
+    description: "Linux, networking, web security, CTF, tools, and homelab field notes",
     progress: 60,
-    lastUpdated: "Nov 2025",
-    url: "https://github.com/ehsanghaffar/handbuilt-linux",
+    lastUpdated: "May 2026",
+    url: "https://github.com/cyberdr1ft3r",
   },
   {
     id: 3,
-    name: "einbiogpt",
-    description: "AI-powered social media bio generator with MCP integration",
+    name: "homelab-runbooks",
+    description: "Repeatable setup and recovery notes for local services and monitoring",
     progress: 90,
-    lastUpdated: "Apr 2025",
-    url: "https://github.com/ehsanghaffar/einbiogpt",
+    lastUpdated: "May 2026",
+    url: "https://github.com/cyberdr1ft3r",
   },
   {
     id: 4,
-    name: "llm-practice",
-    description: "Self-hosted chatbot API with RAG and MCP protocol support",
+    name: "web-recon-checklists",
+    description: "Small-app web security recon habits, headers, cookies, forms, and routes",
     progress: 75,
-    lastUpdated: "Apr 2025",
-    url: "https://github.com/ehsanghaffar/llm-practice",
+    lastUpdated: "May 2026",
+    url: "https://github.com/cyberdr1ft3r",
   },
 ]
 
@@ -58,7 +58,7 @@ export function Workbench() {
               <div className="h-3 w-3 rounded-full bg-yellow-500/60 transition-colors hover:bg-yellow-500 cursor-pointer" />
               <div className="h-3 w-3 rounded-full bg-primary/60 transition-colors hover:bg-primary cursor-pointer" />
             </div>
-            <span className="ml-4 font-mono text-xs text-muted-foreground truncate">~/ehsanghaffar/active</span>
+            <span className="ml-4 font-mono text-xs text-muted-foreground truncate">~/cyberdr1ft3r/active</span>
             <div className="ml-auto hidden sm:flex items-center gap-2 text-muted-foreground">
               <span className="h-1.5 w-1.5 rounded-full bg-primary animate-pulse" />
               <span className="font-mono text-xs">live</span>

@@ -1,23 +1,26 @@
 # CyberDr1ft3r
 
-A modern, minimal code editor / playground built with Next.js, React and Radix UI.
+CyberDr1ft3r is a personal security portfolio, project lab, and technical notes site built with Next.js, React, and Radix UI.
 
 Version: `0.1.1`
 
 ## What the project does
 
-Code Forge is a lightweight, opinionated editor UI and playground intended for experimenting with editor-like components and small developer tools. It demonstrates a modern stack including Next.js 16, React 19, TypeScript, Tailwind CSS and Radix UI primitives.
+CyberDr1ft3r collects Ali Boughlalah's projects, workbench experiments, lab notes, and blog posts in one static-first portfolio. It demonstrates a modern stack including Next.js 16, React 19, TypeScript, Tailwind CSS, and Radix UI primitives.
 
 ### Why this is useful
 
-- Fast developer playground to prototype editor UX and integrations.
-- Collection of reusable UI components (see `components/`).
+- Static-first portfolio for projects, notes, and blog writing.
+- Centralized content data for project and note edits.
 - Up-to-date with Next.js 16 and React 19 modern patterns (app router, server components).
 
 #### Key features
 
 - App shell and layout in `app/`
 - Reusable UI primitives under `components/` (cursor glow, header, footer, workbench, etc.)
+- Project content in `lib/projects-data.ts`
+- Notes content in `lib/notes-data.ts`
+- Blog content in `lib/blog-data.tsx`
 - Styling with Tailwind CSS and global styles in `styles/` and `app/globals.css`
 - TypeScript-first codebase
 
@@ -62,12 +65,12 @@ Project layout (high level)
 
 Where to get help
 
-- Create an issue: <https://github.com/ehsanghaffar/code-forge/issues>
+- Create an issue: <https://github.com/cyberdr1ft3r/issues>
 - For quick questions, open a discussion or file a concise issue with reproduction steps.
 
 Who maintains this project
 
-- Maintainer: Ehsan Ghaffar — listed as the package author.
+- Maintainer: Ali Boughlalah — listed as the package author.
 
 Contributing
 

@@ -12,12 +12,12 @@ export function generateBlogPostStructuredData(post: BlogPost, url: string) {
     author: {
       '@type': 'Person',
       name: post.author.name,
-      url: 'https://github.com/ehsanghaffar',
+      url: 'https://github.com/cyberdr1ft3r',
     },
     publisher: {
       '@type': 'Person',
       name: 'Ali Boughlalah',
-      url: 'https://eindev.ir',
+      url: 'https://cyberdr1ft3r.com',
     },
     mainEntityOfPage: {
       '@type': 'WebPage',
@@ -39,7 +39,7 @@ export function generateWebsiteStructuredData(url: string) {
     author: {
       '@type': 'Person',
       name: 'Ali Boughlalah',
-      url: 'https://github.com/ehsanghaffar',
+      url: 'https://github.com/cyberdr1ft3r',
     },
     potentialAction: {
       '@type': 'SearchAction',
@@ -57,12 +57,12 @@ export function generatePersonStructuredData() {
     '@context': 'https://schema.org',
     '@type': 'Person',
     name: 'Ali Boughlalah',
-    url: 'https://eindev.ir',
-    image: 'https://eindev.ir/developer-portrait.png',
+    url: 'https://cyberdr1ft3r.com',
+    image: 'https://cyberdr1ft3r.com/developer-portrait.png',
     sameAs: [
-      'https://github.com/ehsanghaffar',
-      'https://twitter.com/ehsanghaffar',
-      'https://linkedin.com/in/ehsanghaffar',
+      'https://github.com/cyberdr1ft3r',
+      'https://x.com/cyberdr1ft3r',
+      'https://www.linkedin.com/in/ali-b-26462b401/',
     ],
     jobTitle: 'Software Engineer',
     worksFor: {

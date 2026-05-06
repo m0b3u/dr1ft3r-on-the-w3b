@@ -1,7 +1,7 @@
 import { ProjectsPageContent } from "@/components/public/projects/projects-page-content";
 import type { Metadata } from "next";
 
-const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://eindev.ir';
+const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://cyberdr1ft3r.com';
 
 export const metadata: Metadata = {
   title: "Projects",
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: `${baseUrl}/og-image-projects.png`,
+        url: `${baseUrl}/og-image.png`,
         width: 1200,
         height: 630,
         alt: "CyberDr1ft3r Projects",

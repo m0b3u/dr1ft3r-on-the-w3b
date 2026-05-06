@@ -7,61 +7,61 @@ import { Github, ExternalLink, Clock, GitBranch, Activity } from "lucide-react"
 const wipItems = [
   {
     id: 1,
-    name: "next16-docker-tw4-starter",
-    description: "Next.js 16 starter with App Router, Tailwind v4, Next-Auth v5, and Docker",
+    name: "stackwarden",
+    description: "Security-focused homelab monitoring, exposure notes, and blue-team runbooks",
     progress: 85,
-    lastUpdated: "Dec 2024",
-    url: "https://github.com/ehsanghaffar/next16-docker-tw4-starter",
+    lastUpdated: "May 2026",
+    url: "https://github.com/cyberdr1ft3r",
     branch: "main",
     commits: 47,
   },
   {
     id: 2,
-    name: "handbuilt-linux",
-    description: "Minimal Linux distro from scratch with BusyBox and Syslinux bootloader",
+    name: "drift-notes",
+    description: "Linux, networking, web security, CTF, tools, and homelab field notes",
     progress: 60,
-    lastUpdated: "Nov 2025",
-    url: "https://github.com/ehsanghaffar/handbuilt-linux",
+    lastUpdated: "May 2026",
+    url: "https://github.com/cyberdr1ft3r",
     branch: "develop",
     commits: 32,
   },
   {
     id: 3,
-    name: "einbiogpt",
-    description: "AI-powered social media bio generator with MCP integration",
+    name: "homelab-runbooks",
+    description: "Repeatable setup and recovery notes for local services and monitoring",
     progress: 90,
-    lastUpdated: "Apr 2025",
-    url: "https://github.com/ehsanghaffar/einbiogpt",
+    lastUpdated: "May 2026",
+    url: "https://github.com/cyberdr1ft3r",
     branch: "main",
     commits: 89,
   },
   {
     id: 4,
-    name: "llm-practice",
-    description: "Self-hosted chatbot API with RAG and MCP protocol support",
+    name: "web-recon-checklists",
+    description: "Small-app web security recon habits, headers, cookies, forms, and routes",
     progress: 75,
-    lastUpdated: "Apr 2025",
-    url: "https://github.com/ehsanghaffar/llm-practice",
-    branch: "feature/mcp",
+    lastUpdated: "May 2026",
+    url: "https://github.com/cyberdr1ft3r",
+    branch: "main",
     commits: 56,
   },
   {
     id: 5,
-    name: "einui",
-    description: "Liquid Glass UI components library built on Tailwind and shadcn/ui",
+    name: "toolbox-audit",
+    description: "Trusted commands, scripts, scanners, and documentation helpers for the lab",
     progress: 45,
-    lastUpdated: "Dec 2024",
-    url: "https://github.com/ehsanghaffar/einui",
+    lastUpdated: "May 2026",
+    url: "https://github.com/cyberdr1ft3r",
     branch: "main",
     commits: 28,
   },
 ]
 
 const recentActivity = [
-  { type: "commit", project: "einui", message: "Add new Button variants", time: "2 hours ago" },
-  { type: "branch", project: "llm-practice", message: "Created feature/mcp branch", time: "5 hours ago" },
-  { type: "commit", project: "einbiogpt", message: "Implement MCP protocol handlers", time: "1 day ago" },
-  { type: "commit", project: "handbuilt-linux", message: "Update kernel config", time: "2 days ago" },
+  { type: "commit", project: "stackwarden", message: "Draft exposure review checklist", time: "2 hours ago" },
+  { type: "branch", project: "drift-notes", message: "Organize notes by security category", time: "5 hours ago" },
+  { type: "commit", project: "homelab-runbooks", message: "Add backup verification steps", time: "1 day ago" },
+  { type: "commit", project: "toolbox-audit", message: "Review scanner defaults", time: "2 days ago" },
 ]
 
 export function WorkbenchPageContent() {
@@ -103,7 +103,7 @@ export function WorkbenchPageContent() {
                   <div className="h-3 w-3 rounded-full bg-yellow-500/60 transition-colors hover:bg-yellow-500 cursor-pointer" />
                   <div className="h-3 w-3 rounded-full bg-primary/60 transition-colors hover:bg-primary cursor-pointer" />
                 </div>
-                <span className="ml-4 font-mono text-xs text-muted-foreground truncate">~/ehsanghaffar/active</span>
+                <span className="ml-4 font-mono text-xs text-muted-foreground truncate">~/cyberdr1ft3r/active</span>
                 <div className="ml-auto flex items-center gap-2 text-muted-foreground">
                   <span className="h-1.5 w-1.5 rounded-full bg-primary animate-pulse" />
                   <span className="font-mono text-xs">live</span>
