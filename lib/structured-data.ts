@@ -16,7 +16,7 @@ export function generateBlogPostStructuredData(post: BlogPost, url: string) {
     },
     publisher: {
       '@type': 'Person',
-      name: 'Ehsan Ghaffar',
+      name: 'Ali Boughlalah',
       url: 'https://eindev.ir',
     },
     mainEntityOfPage: {
@@ -34,11 +34,11 @@ export function generateWebsiteStructuredData(url: string) {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
     name: 'CyberDr1ft3r',
-    description: "A digital workshop where code meets curiosity. Experiments, prototypes, and open-source artifacts by Ehsan Ghaffar.",
+    description: "A digital workshop where code meets curiosity. Experiments, prototypes, and open-source artifacts by Ali Boughlalah.",
     url: url,
     author: {
       '@type': 'Person',
-      name: 'Ehsan Ghaffar',
+      name: 'Ali Boughlalah',
       url: 'https://github.com/ehsanghaffar',
     },
     potentialAction: {
@@ -56,7 +56,7 @@ export function generatePersonStructuredData() {
   return {
     '@context': 'https://schema.org',
     '@type': 'Person',
-    name: 'Ehsan Ghaffar',
+    name: 'Ali Boughlalah',
     url: 'https://eindev.ir',
     image: 'https://eindev.ir/developer-portrait.png',
     sameAs: [
