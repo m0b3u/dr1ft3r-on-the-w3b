@@ -1,15 +1,15 @@
 import { Github, Twitter, Linkedin, Mail, ExternalLink, Heart } from "lucide-react"
 
 const socialLinks = [
-  { label: "GitHub", href: "https://github.com/ehsanghaffar", handle: "@ehsanghaffar", icon: Github },
-  { label: "Twitter", href: "https://twitter.com/ehsanghaffar", handle: "@ehsanghaffar", icon: Twitter },
-  { label: "LinkedIn", href: "https://linkedin.com/in/ehsanghaffar", handle: "/in/ehsanghaffar", icon: Linkedin },
-  { label: "Email", href: "mailto:hello@ehsanghaffar.dev", handle: "hello@ehsanghaffar.dev", icon: Mail },
+  { label: "GitHub", href: "https://github.com/cyberdr1ft3r", handle: "@cyberdr1ft3r", icon: Github },
+  { label: "Twitter", href: "https://x.com/cyberdr1ft3r", handle: "@cyberdr1ft3r", icon: Twitter },
+  { label: "LinkedIn", href: "https://linkedin.com/in/TODO_LINKEDIN", handle: "/in/TODO_LINKEDIN", icon: Linkedin },
+  { label: "Email", href: "mailto:contact@cyberdr1ft3r.com", handle: "contact@cyberdr1ft3r.com", icon: Mail },
 ]
 
 export function Footer() {
   return (
-    <footer id="connect" className="border-t border-border/30 px-4 sm:px-6 py-20 sm:py-28">
+    <footer id="connect" className="border-t border-border/30 px-4 sm:px-6 py-14 sm:py-18">
       <div className="mx-auto max-w-7xl">
         <div className="grid gap-12 sm:gap-16 lg:grid-cols-2">
           {/* Left column */}
@@ -28,7 +28,7 @@ export function Footer() {
 
             <div className="pt-2">
               <a
-                href="mailto:hello@ehsanghaffar.dev"
+                href="mailto:contact@cyberdr1ft3r.com"
                 className="group relative inline-flex items-center justify-center gap-3 overflow-hidden rounded-xl border border-primary bg-primary/10 px-8 py-4 sm:py-4 font-mono text-sm text-primary transition-all duration-500 hover:text-primary-foreground active:scale-[0.98] w-full sm:w-auto"
               >
                 <span className="relative z-10">send a signal</span>
@@ -80,20 +80,6 @@ export function Footer() {
             <span>& code</span>
           </div>
 
-          <div className="flex items-center gap-4">
-            {socialLinks.slice(0, 3).map((link) => (
-              <a
-                key={link.label}
-                href={link.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label={link.label}
-                className="text-muted-foreground/50 transition-all duration-300 hover:text-primary hover:scale-110"
-              >
-                <link.icon className="h-5 w-5" />
-              </a>
-            ))}
-          </div>
 
           <p className="font-mono text-xs text-muted-foreground text-center sm:text-right">
             © {new Date().getFullYear()} CyberDr1ft3r — All experiments reserved
