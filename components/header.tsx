@@ -3,24 +3,27 @@
 import { useState, useEffect } from "react"
 import { usePathname } from "next/navigation"
 import { cn } from "@/lib/utils"
-import { Github, Twitter, Linkedin } from "lucide-react"
+import { Github, Linkedin, Mail } from "lucide-react"
 import { ThemeToggle } from "./theme-toggle"
 import { ThemeChanger } from "./theme-changer"
 import Link from "next/link"
 
 const navItems = [
   { label: "Home", href: "/" },
+    { label: "Notes", href: "/notes" },
   { label: "Projects", href: "/projects" },
-  // { label: "Notes", href: "/notes" },/
   { label: "Workbench", href: "/workbench" },
-  { label: "Blog", href: "/blog" },
+  { label: "About", href: "/about" },
+  { label: "Contact", href: "/contact" },
 ]
 
 const socialLinks = [
-  { label: "GitHub", href: "https://github.com/ehsanghaffar", icon: Github },
-  { label: "Twitter", href: "https://twitter.com/ehsanghaffar", icon: Twitter },
-  { label: "LinkedIn", href: "https://linkedin.com/in/ehsanghaffar", icon: Linkedin },
+  { label: "GitHub", href: "https://github.com/cyberdr1ft3r", icon: Github },
+  { label: "LinkedIn", href: "https://linkedin.com/in/cyberdr1ft3r", icon: Linkedin },
+  { label: "Email", href: "mailto:hello@cyberdr1ft3r.com", icon: Mail },
 ]
+
+
 
 export function Header() {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null)
@@ -55,7 +58,7 @@ export function Header() {
               <span className="glitch">{"👾"}</span>
             </div>
             <span className="font-mono text-sm tracking-tight">
-              Cyber<span className="bg-gradient-to-l from-primary/50 to-accent bg-clip-text text-transparent font-semibold">Dr1ft3r</span>
+              Cyber <span className="bg-gradient-to-l from-primary/50 to-accent bg-clip-text text-transparent font-semibold">Drifter</span>
             </span>
           </Link>
 
@@ -135,7 +138,7 @@ export function Header() {
                 <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-primary opacity-75" />
                 <span className="relative inline-flex h-2 w-2 rounded-full bg-primary" />
               </span>
-              <span>status: building</span>
+              <span>status: learning</span>
             </div>
 
             <button
@@ -214,7 +217,7 @@ export function Header() {
                 <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-primary opacity-75" />
                 <span className="relative inline-flex h-2 w-2 rounded-full bg-primary" />
               </span>
-              <span>status: building</span>
+              <span>status: learning</span>
             </div>
           </div>
         </div>

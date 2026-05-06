@@ -1,0 +1,4 @@
+import type { Metadata } from "next"
+const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://cyberdr1ft3r.com"
+export const metadata: Metadata = { title: "About | Cyber Drifter", description: "About cyberdr1ft3r.", alternates: { canonical: `${baseUrl}/about` } }
+export default function AboutPage() { return <section className="px-4 sm:px-6 py-32"><div className="mx-auto max-w-4xl rounded-xl border border-border bg-card/40 glass p-8 sm:p-10"><p className="font-mono text-xs uppercase tracking-[0.35em] text-primary mb-4">About</p><h1 className="text-4xl font-bold tracking-tight mb-6">Cyber Drifter</h1><p className="text-lg text-muted-foreground leading-relaxed">I’m a sysadmin and cybersecurity enthusiast interested in Linux, networking, infrastructure security, web security, CTFs, blue team, and homelab projects.</p></div></section> }

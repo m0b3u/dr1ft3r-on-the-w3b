@@ -6,6 +6,20 @@ import { Github, Star, GitFork, ExternalLink, Sparkles } from "lucide-react"
 
 const projects = [
   {
+    id: 99,
+    title: "Stackwarden",
+    description:
+      "Stackwarden is a future security tool concept for tracking infrastructure assets, exposed services, configuration drift, and remediation tasks.",
+    tags: ["Security", "Infrastructure", "Blue Team"],
+    status: "in-progress",
+    year: "2026",
+    stars: 0,
+    forks: 0,
+    url: "https://github.com/cyberdr1ft3r/stackwarden",
+    featured: true,
+    highlight: true,
+  },
+  {
     id: 0,
     title: "EinUI",
     description:
@@ -129,7 +143,7 @@ export function ProjectsGrid() {
         <div className="mb-10 sm:mb-14 flex flex-col gap-6 sm:gap-8 sm:flex-row sm:items-end sm:justify-between">
           <div className="space-y-3 animate-fade-in-up">
             <p className="font-mono text-xs uppercase tracking-[0.25em] sm:tracking-[0.35em] text-primary">Artifacts</p>
-            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl lg:text-5xl">Open Source Projects</h2>
+            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl lg:text-5xl">Security Projects</h2>
           </div>
 
           <div className="flex gap-2 overflow-x-auto pb-2 -mx-4 px-4 sm:mx-0 sm:px-0 sm:overflow-visible sm:flex-wrap scrollbar-hide animate-fade-in-up stagger-2">
