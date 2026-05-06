@@ -1,4 +1,4 @@
-# GitHub Copilot / AI Agent Instructions — EinCode
+# GitHub Copilot / AI Agent Instructions — CyberDr1ft3r
 
 Quick orienting notes for AI agents working in this repository.
 

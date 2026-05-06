@@ -4,85 +4,7 @@ import { useState, useEffect } from "react"
 import { cn } from "@/lib/utils"
 import { ArrowRight, Calendar, Tag, Search } from "lucide-react"
 import { Input } from "@/components/ui/input"
-
-const notes = [
-  {
-    id: 1,
-    title: "Building a Linux distro from scratch",
-    excerpt:
-      "Learnings from compiling the kernel, configuring BusyBox, and creating bootable ISOs with Syslinux. A deep dive into the foundations of operating systems.",
-    content:
-      "Full walkthrough of building a minimal Linux distribution including kernel compilation, initramfs setup, and bootloader configuration...",
-    date: "Nov 2025",
-    category: "systems",
-    tags: ["Linux", "Shell", "Docker"],
-    color: "from-blue-500/20 to-cyan-500/20",
-    readTime: "12 min",
-  },
-  {
-    id: 2,
-    title: "MCP protocol in LLM apps",
-    excerpt:
-      "Implementing Model Context Protocol for seamless AI model interactions with vector databases in RAG apps. Exploring the future of AI agent communication.",
-    content: "Deep dive into MCP protocol implementation...",
-    date: "Apr 2025",
-    category: "ai",
-    tags: ["AI", "MCP", "RAG", "LangChain"],
-    color: "from-purple-500/20 to-pink-500/20",
-    readTime: "8 min",
-  },
-  {
-    id: 3,
-    title: "Next.js 16 + Tailwind v4",
-    excerpt:
-      "Exploring the new features in Next.js 16 and migrating to Tailwind CSS v4's new configuration system. Performance improvements and developer experience.",
-    content: "Migration guide and new features overview...",
-    date: "Dec 2024",
-    category: "frontend",
-    tags: ["Next.js", "Tailwind", "TypeScript"],
-    color: "from-primary/20 to-purple-500/20",
-    readTime: "6 min",
-  },
-  {
-    id: 4,
-    title: "Self-hosting LLMs with FastAPI",
-    excerpt:
-      "Running Llama2 locally and building a personal chatbot API for natural language tasks. Complete setup guide with Docker containerization.",
-    content: "Step-by-step guide to self-hosting LLMs...",
-    date: "Oct 2023",
-    category: "ai",
-    tags: ["Python", "FastAPI", "Llama2", "Docker"],
-    color: "from-orange-500/20 to-amber-500/20",
-    readTime: "10 min",
-  },
-  {
-    id: 5,
-    title: "Docker multi-stage builds for Next.js",
-    excerpt:
-      "Optimizing container sizes and build times with multi-stage Docker builds. Production-ready configurations for Next.js applications.",
-    content: "Docker optimization techniques...",
-    date: "Sep 2023",
-    category: "devops",
-    tags: ["Docker", "Next.js", "CI/CD"],
-    color: "from-cyan-500/20 to-blue-500/20",
-    readTime: "7 min",
-  },
-  {
-    id: 6,
-    title: "React Server Components deep dive",
-    excerpt:
-      "Understanding the paradigm shift with RSC. How server components change data fetching patterns and improve performance.",
-    content: "Complete guide to React Server Components...",
-    date: "Aug 2023",
-    category: "frontend",
-    tags: ["React", "RSC", "Next.js"],
-    color: "from-indigo-500/20 to-purple-500/20",
-    readTime: "9 min",
-  },
-]
-
-const categories = ["all", "frontend", "ai", "systems", "devops"]
-const allTags = [...new Set(notes.flatMap((n) => n.tags))]
+import { noteFilters, notes, noteTags } from "@/lib/notes-data"
 
 export function NotesPageContent() {
   const [activeCategory, setActiveCategory] = useState("all")
@@ -141,7 +63,7 @@ export function NotesPageContent() {
             <div className="rounded-xl border border-border bg-card/40 glass p-5">
               <h3 className="font-mono text-xs uppercase tracking-wider text-primary mb-4">Categories</h3>
               <div className="flex flex-col gap-2">
-                {categories.map((category) => (
+                {noteFilters.map((category) => (
                   <button
                     key={category}
                     onClick={() => setActiveCategory(category)}
@@ -165,7 +87,7 @@ export function NotesPageContent() {
                 Tags
               </h3>
               <div className="flex flex-wrap gap-2">
-                {allTags.map((tag) => (
+                {noteTags.map((tag) => (
                   <button
                     key={tag}
                     onClick={() => toggleTag(tag)}

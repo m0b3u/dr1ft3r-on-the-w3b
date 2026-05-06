@@ -1,7 +1,7 @@
 import { WorkbenchPageContent } from "@/components/public/workbench/workbench-page-content";
 import type { Metadata } from "next";
 
-const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://eindev.ir';
+const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://cyberdr1ft3r.com';
 
 export const metadata: Metadata = {
   title: "Workbench",
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: `${baseUrl}/og-image-workbench.png`,
+        url: `${baseUrl}/og-image.png`,
         width: 1200,
         height: 630,
         alt: "CyberDr1ft3r Workbench",

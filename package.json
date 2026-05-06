@@ -1,17 +1,19 @@
 {
-  "name": "code-forge",
+  "name": "cyberdr1ft3r",
   "version": "0.1.0",
   "private": true,
-  "description": "A modern code editor built with Next.js and Radix UI.",
+  "description": "CyberDr1ft3r personal security portfolio, project lab, and technical notes site.",
   "keywords": [
     "nextjs",
     "radix-ui",
-    "code editor",
+    "cybersecurity",
+    "portfolio",
+    "homelab",
     "react",
     "typescript",
     "tailwindcss"
   ],
-  "author": "Ehsan Ghaffar",
+  "author": "Ali Boughlalah",
   "scripts": {
     "analyze": "next experimental-analyze",
     "build": "next build",

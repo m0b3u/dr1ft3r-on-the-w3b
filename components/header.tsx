@@ -11,15 +11,16 @@ import Link from "next/link"
 const navItems = [
   { label: "Home", href: "/" },
   { label: "Projects", href: "/projects" },
-  // { label: "Notes", href: "/notes" },/
+  { label: "Notes", href: "/notes" },
   { label: "Workbench", href: "/workbench" },
+  { label: "About", href: "/about" },
   { label: "Blog", href: "/blog" },
 ]
 
 const socialLinks = [
-  { label: "GitHub", href: "https://github.com/ehsanghaffar", icon: Github },
-  { label: "Twitter", href: "https://twitter.com/ehsanghaffar", icon: Twitter },
-  { label: "LinkedIn", href: "https://linkedin.com/in/ehsanghaffar", icon: Linkedin },
+  { label: "GitHub", href: "TODO_GITHUB", icon: Github },
+  { label: "Twitter", href: "TODO_X", icon: Twitter },
+  { label: "LinkedIn", href: "TODO_LINKEDIN", icon: Linkedin },
 ]
 
 export function Header() {
