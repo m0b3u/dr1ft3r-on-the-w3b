@@ -12,7 +12,7 @@ export function generateBlogPostStructuredData(post: BlogPost, url: string) {
     author: {
       '@type': 'Person',
       name: post.author.name,
-      url: 'https://github.com/ehsanghaffar',
+      url: 'TODO_GITHUB',
     },
     publisher: {
       '@type': 'Person',
@@ -39,7 +39,7 @@ export function generateWebsiteStructuredData(url: string) {
     author: {
       '@type': 'Person',
       name: 'Ali Boughlalah',
-      url: 'https://github.com/ehsanghaffar',
+      url: 'TODO_GITHUB',
     },
     potentialAction: {
       '@type': 'SearchAction',
@@ -60,9 +60,9 @@ export function generatePersonStructuredData() {
     url: 'https://eindev.ir',
     image: 'https://eindev.ir/developer-portrait.png',
     sameAs: [
-      'https://github.com/ehsanghaffar',
-      'https://twitter.com/ehsanghaffar',
-      'https://linkedin.com/in/ehsanghaffar',
+      'TODO_GITHUB',
+      'TODO_X',
+      'https://www.linkedin.com/in/ali-b-26462b401/',
     ],
     jobTitle: 'Software Engineer',
     worksFor: {
