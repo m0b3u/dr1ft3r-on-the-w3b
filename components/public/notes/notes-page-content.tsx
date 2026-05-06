@@ -81,7 +81,7 @@ const notes = [
   },
 ]
 
-const categories = ["all", "frontend", "ai", "systems", "devops"]
+const categories = ["all", "linux", "networking", "web security", "ctfs", "blue team", "tools"]
 const allTags = [...new Set(notes.flatMap((n) => n.tags))]
 
 export function NotesPageContent() {
@@ -115,7 +115,7 @@ export function NotesPageContent() {
         {/* Hero */}
         <div className={cn("mb-12 sm:mb-16 space-y-4 opacity-0", isVisible && "animate-fade-in-up")}>
           <p className="font-mono text-xs uppercase tracking-[0.25em] sm:tracking-[0.35em] text-primary">Field Notes</p>
-          <h1 className="text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">Lab Notes</h1>
+          <h1 className="text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">Notes</h1>
           <p className="max-w-2xl text-base sm:text-lg text-muted-foreground leading-relaxed">
             Brief observations, technical findings, and thoughts from the workbench. Documentation of the learning
             journey.

@@ -5,39 +5,12 @@ import { cn } from "@/lib/utils"
 import { ArrowRight } from "lucide-react"
 
 const notes = [
-  {
-    id: 1,
-    title: "Building a Linux distro from scratch",
-    excerpt: "Learnings from compiling the kernel, configuring BusyBox, and creating bootable ISOs with Syslinux.",
-    date: "Nov 2025",
-    category: "systems",
-    color: "from-blue-500/20 to-cyan-500/20",
-  },
-  {
-    id: 2,
-    title: "MCP protocol in LLM apps",
-    excerpt:
-      "Implementing Model Context Protocol for seamless AI model interactions with vector databases in RAG apps.",
-    date: "Apr 2025",
-    category: "ai",
-    color: "from-purple-500/20 to-pink-500/20",
-  },
-  {
-    id: 3,
-    title: "Next.js 16 + Tailwind v4",
-    excerpt: "Exploring the new features in Next.js 16 and migrating to Tailwind CSS v4's new configuration system.",
-    date: "Dec 2024",
-    category: "frontend",
-    color: "from-primary/20 to-purple-500/20",
-  },
-  {
-    id: 4,
-    title: "Self-hosting LLMs with FastAPI",
-    excerpt: "Running Llama2 locally and building a personal chatbot API for natural language tasks.",
-    date: "Oct 2023",
-    category: "ai",
-    color: "from-orange-500/20 to-amber-500/20",
-  },
+  { id: 1, title: "Linux Hardening Checklist", excerpt: "Baseline hardening notes for Debian and Ubuntu servers.", date: "May 2026", category: "Linux", color: "from-blue-500/20 to-cyan-500/20" },
+  { id: 2, title: "Home Network Segmentation", excerpt: "VLAN and firewall observations from a small homelab redesign.", date: "May 2026", category: "Networking", color: "from-purple-500/20 to-pink-500/20" },
+  { id: 3, title: "Recon Notes for Web Targets", excerpt: "Initial checklist for web security recon and attack surface mapping.", date: "Apr 2026", category: "Web Security", color: "from-primary/20 to-purple-500/20" },
+  { id: 4, title: "CTF Warmup Workflow", excerpt: "Quick workflow for binary/web CTF warmup and note taking.", date: "Apr 2026", category: "CTFs", color: "from-orange-500/20 to-amber-500/20" },
+  { id: 5, title: "Blue Team Detection Ideas", excerpt: "Starter detection rules and log triage notes for small teams.", date: "Mar 2026", category: "Blue Team", color: "from-emerald-500/20 to-cyan-500/20" },
+  { id: 6, title: "Useful Security CLI Tools", excerpt: "A shortlist of Linux security tools I use in labs.", date: "Mar 2026", category: "Tools", color: "from-fuchsia-500/20 to-rose-500/20" },
 ]
 
 export function LabNotes() {
@@ -48,7 +21,7 @@ export function LabNotes() {
       <div className="mx-auto max-w-7xl">
         <div className="mb-10 sm:mb-14 space-y-3 animate-fade-in-up">
           <p className="font-mono text-xs uppercase tracking-[0.25em] sm:tracking-[0.35em] text-primary">Field Notes</p>
-          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl lg:text-5xl">Lab Notes</h2>
+          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl lg:text-5xl">Notes</h2>
           <p className="max-w-2xl text-base sm:text-lg text-muted-foreground leading-relaxed">
             Brief observations, technical findings, and thoughts from the workbench.
           </p>

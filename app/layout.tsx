@@ -25,39 +25,39 @@ const spaceGrotesk = Space_Grotesk({
 const emojiFavicon = "data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👾</text></svg>"
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://eindev.ir'),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://cyberdr1ft3r.com'),
   title: {
-    default: "CyberDr1ft3r — Ali Boughlalah's Digital Laboratory",
-    template: "%s | CyberDr1ft3r",
+    default: "Cyber Drifter — cyberdr1ft3r.com",
+    template: "%s | Cyber Drifter",
   },
   description:
-    "A digital workshop where code meets curiosity. Experiments, prototypes, and open-source artifacts by Ali Boughlalah.",
-  keywords: ["Software Engineering", "Web Development", "Next.js", "React", "TypeScript", "AI", "Machine Learning", "Systems Programming", "Code Experiments"],
-  authors: [{ name: "Ali Boughlalah", url: "https://github.com/ehsanghaffar" }],
-  creator: "Ali Boughlalah",
-  publisher: "Ali Boughlalah",
+    "Cybersecurity portfolio, notes, projects, and homelab experiments by cyberdr1ft3r.",
+  keywords: ["Cybersecurity", "Linux", "CTFs", "Homelab", "Infrastructure Security", "Web Security"],
+  authors: [{ name: "Cyber Drifter", url: "https://github.com/cyberdr1ft3r" }],
+  creator: "Cyber Drifter",
+  publisher: "Cyber Drifter",
   generator: "v0.app",
   openGraph: {
     type: "website",
     locale: "en_US",
     url: "/",
-    title: "CyberDr1ft3r — Ali Boughlalah's Digital Laboratory",
-    description: "A digital workshop where code meets curiosity. Experiments, prototypes, and open-source artifacts by Ali Boughlalah.",
-    siteName: "CyberDr1ft3r",
+    title: "Cyber Drifter — cyberdr1ft3r.com",
+    description: "Cybersecurity portfolio, notes, projects, and homelab experiments by cyberdr1ft3r.",
+    siteName: "Cyber Drifter",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "CyberDr1ft3r — Ali Boughlalah's Digital Laboratory",
+        alt: "Cyber Drifter — cyberdr1ft3r.com",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "CyberDr1ft3r — Ali Boughlalah's Digital Laboratory",
+    title: "Cyber Drifter — cyberdr1ft3r.com",
     description: "A digital workshop where code meets curiosity. Experiments, prototypes, and open-source artifacts.",
-    creator: "@ehsanghaffar",
+    creator: "@cyberdr1ft3r",
     images: ["/og-image.png"],
   },
   robots: {
