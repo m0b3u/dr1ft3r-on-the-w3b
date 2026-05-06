@@ -590,9 +590,9 @@ export async function GET() {
 \`\`\`env
 # .env.local
 NEXT_PUBLIC_SITE_URL=http://localhost:3000
-NEXT_PUBLIC_GITHUB_URL=TODO_GITHUB
-NEXT_PUBLIC_TWITTER_URL=TODO_X
-NEXT_PUBLIC_LINKEDIN_URL=TODO_LINKEDIN
+NEXT_PUBLIC_GITHUB_URL=https://github.com/cyberdr1ft3r
+NEXT_PUBLIC_TWITTER_URL=https://x.com/cyberdr1ft3r
+NEXT_PUBLIC_LINKEDIN_URL=https://www.linkedin.com/in/ali-b-26462b401/
 \`\`\`
 
 ---

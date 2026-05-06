@@ -8,7 +8,7 @@ const wipItems = [
     description: "Security-focused homelab monitoring, exposure notes, and blue-team runbooks",
     progress: 85,
     lastUpdated: "May 2026",
-    url: "TODO_GITHUB",
+    url: "https://github.com/cyberdr1ft3r",
   },
   {
     id: 2,
@@ -16,7 +16,7 @@ const wipItems = [
     description: "Linux, networking, web security, CTF, tools, and homelab field notes",
     progress: 60,
     lastUpdated: "May 2026",
-    url: "TODO_GITHUB",
+    url: "https://github.com/cyberdr1ft3r",
   },
   {
     id: 3,
@@ -24,7 +24,7 @@ const wipItems = [
     description: "Repeatable setup and recovery notes for local services and monitoring",
     progress: 90,
     lastUpdated: "May 2026",
-    url: "TODO_GITHUB",
+    url: "https://github.com/cyberdr1ft3r",
   },
   {
     id: 4,
@@ -32,7 +32,7 @@ const wipItems = [
     description: "Small-app web security recon habits, headers, cookies, forms, and routes",
     progress: 75,
     lastUpdated: "May 2026",
-    url: "TODO_GITHUB",
+    url: "https://github.com/cyberdr1ft3r",
   },
 ]
 

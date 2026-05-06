@@ -26,7 +26,7 @@ export const projects: Project[] = [
     year: "2026",
     stars: 0,
     forks: 0,
-    url: "TODO_GITHUB",
+    url: "https://github.com/cyberdr1ft3r",
     homepage: "TODO_PROJECT_URL",
     featured: true,
     highlight: true,
@@ -41,7 +41,7 @@ export const projects: Project[] = [
     year: "2026",
     stars: 0,
     forks: 0,
-    url: "TODO_GITHUB",
+    url: "https://github.com/cyberdr1ft3r",
     featured: true,
   },
   {
@@ -54,7 +54,7 @@ export const projects: Project[] = [
     year: "2026",
     stars: 0,
     forks: 0,
-    url: "TODO_GITHUB",
+    url: "https://github.com/cyberdr1ft3r",
     featured: false,
   },
 ]

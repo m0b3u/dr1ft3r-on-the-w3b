@@ -137,7 +137,7 @@ export function ProjectsGrid() {
                   <Github className="h-4 w-4 transition-transform group-hover/link:scale-110" />
                   <span className="underline-animate">source</span>
                 </a>
-                {project.homepage && (
+                {project.homepage && !project.homepage.startsWith("TODO_") && (
                   <a
                     href={project.homepage}
                     target="_blank"

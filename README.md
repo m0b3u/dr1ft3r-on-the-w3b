@@ -65,7 +65,7 @@ Project layout (high level)
 
 Where to get help
 
-- Create an issue: <TODO_GITHUB/issues>
+- Create an issue: <https://github.com/cyberdr1ft3r/issues>
 - For quick questions, open a discussion or file a concise issue with reproduction steps.
 
 Who maintains this project

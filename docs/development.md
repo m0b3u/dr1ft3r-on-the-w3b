@@ -13,7 +13,7 @@
 
 \`\`\`bash
 # Clone repository
-git clone TODO_GITHUB.git
+git clone https://github.com/cyberdr1ft3r.git
 cd CyberDr1ft3r
 
 # Install dependencies
@@ -504,7 +504,7 @@ chore: maintenance
 - **Next.js Docs**: https://nextjs.org/docs
 - **Tailwind Docs**: https://tailwindcss.com/docs
 - **Radix UI Docs**: https://www.radix-ui.com/
-- **GitHub Issues**: TODO_GITHUB/issues
+- **GitHub Issues**: https://github.com/cyberdr1ft3r/issues
 - **Discord**: (Add if exists)
 
 ---

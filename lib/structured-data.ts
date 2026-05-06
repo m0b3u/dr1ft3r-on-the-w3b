@@ -12,7 +12,7 @@ export function generateBlogPostStructuredData(post: BlogPost, url: string) {
     author: {
       '@type': 'Person',
       name: post.author.name,
-      url: 'TODO_GITHUB',
+      url: 'https://github.com/cyberdr1ft3r',
     },
     publisher: {
       '@type': 'Person',
@@ -39,7 +39,7 @@ export function generateWebsiteStructuredData(url: string) {
     author: {
       '@type': 'Person',
       name: 'Ali Boughlalah',
-      url: 'TODO_GITHUB',
+      url: 'https://github.com/cyberdr1ft3r',
     },
     potentialAction: {
       '@type': 'SearchAction',
@@ -60,9 +60,9 @@ export function generatePersonStructuredData() {
     url: 'https://cyberdr1ft3r.com',
     image: 'https://cyberdr1ft3r.com/developer-portrait.png',
     sameAs: [
-      'TODO_GITHUB',
-      'TODO_X',
-      'TODO_LINKEDIN',
+      'https://github.com/cyberdr1ft3r',
+      'https://x.com/cyberdr1ft3r',
+      'https://www.linkedin.com/in/ali-b-26462b401/',
     ],
     jobTitle: 'Software Engineer',
     worksFor: {

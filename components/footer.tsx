@@ -1,10 +1,10 @@
 import { Github, Twitter, Linkedin, Mail, ExternalLink, Heart } from "lucide-react"
 
 const socialLinks = [
-  { label: "GitHub", href: "TODO_GITHUB", handle: "TODO_GITHUB", icon: Github },
-  { label: "Twitter", href: "TODO_X", handle: "TODO_X", icon: Twitter },
-  { label: "LinkedIn", href: "TODO_LINKEDIN", handle: "TODO_LINKEDIN", icon: Linkedin },
-  { label: "Email", href: "mailto:TODO_EMAIL", handle: "TODO_EMAIL", icon: Mail },
+  { label: "GitHub", href: "https://github.com/cyberdr1ft3r", handle: "cyberdr1ft3r", icon: Github },
+  { label: "X/Twitter", href: "https://x.com/cyberdr1ft3r", handle: "@cyberdr1ft3r", icon: Twitter },
+  { label: "LinkedIn", href: "https://www.linkedin.com/in/ali-b-26462b401/", handle: "Ali Boughlalah", icon: Linkedin },
+  { label: "Email", href: "mailto:aliboughlalah@gmail.com", handle: "aliboughlalah@gmail.com", icon: Mail },
 ]
 
 export function Footer() {
@@ -28,7 +28,7 @@ export function Footer() {
 
             <div className="pt-2">
               <a
-                href="mailto:TODO_EMAIL"
+                href="mailto:aliboughlalah@gmail.com"
                 className="group relative inline-flex items-center justify-center gap-3 overflow-hidden rounded-xl border border-primary bg-primary/10 px-8 py-4 sm:py-4 font-mono text-sm text-primary transition-all duration-500 hover:text-primary-foreground active:scale-[0.98] w-full sm:w-auto"
               >
                 <span className="relative z-10">send a signal</span>
