@@ -7,7 +7,7 @@ import { Input } from "@/components/ui/input"
 import { notes } from "@/lib/notes-data"
 
 
-const categories = ["all", "frontend", "ai", "systems", "devops"]
+const categories = ["all", "linux", "networking", "web-security", "blue-team", "ctf", "tools", "homelab"]
 const allTags = [...new Set(notes.flatMap((n) => n.tags))]
 
 export function NotesPageContent() {

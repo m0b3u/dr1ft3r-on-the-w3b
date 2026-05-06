@@ -1,5 +1,5 @@
 // Edit this file to add, remove, or update notes shown on the Notes page.
-export type NoteCategory = "frontend" | "ai" | "systems" | "devops"
+export type NoteCategory = "linux" | "networking" | "web-security" | "blue-team" | "ctf" | "tools" | "homelab"
 
 export interface NoteItem {
   id: number
@@ -16,75 +16,86 @@ export interface NoteItem {
 export const notes: NoteItem[] = [
   {
     id: 1,
-    title: "Building a Linux distro from scratch",
+    title: "Linux file permissions mistakes I keep making",
     excerpt:
-      "Learnings from compiling the kernel, configuring BusyBox, and creating bootable ISOs with Syslinux. A deep dive into the foundations of operating systems.",
-    content:
-      "Full walkthrough of building a minimal Linux distribution including kernel compilation, initramfs setup, and bootloader configuration...",
-    date: "Nov 2025",
-    category: "systems",
-    tags: ["Linux", "Shell", "Docker"],
+      "A beginner-focused checklist for avoiding dangerous chmod/chown patterns and auditing risky SUID/SGID binaries on fresh Linux installs.",
+    content: "Command examples, why they matter, and a quick remediation flow for common permission misconfigurations.",
+    date: "May 2026",
+    category: "linux",
+    tags: ["Linux", "Permissions", "Privilege Escalation"],
     color: "from-blue-500/20 to-cyan-500/20",
-    readTime: "12 min",
+    readTime: "6 min",
   },
   {
     id: 2,
-    title: "MCP protocol in LLM apps",
+    title: "My first VLAN segmentation in the homelab",
     excerpt:
-      "Implementing Model Context Protocol for seamless AI model interactions with vector databases in RAG apps. Exploring the future of AI agent communication.",
-    content: "Deep dive into MCP protocol implementation...",
-    date: "Apr 2025",
-    category: "ai",
-    tags: ["AI", "MCP", "RAG", "LangChain"],
+      "Notes from splitting a flat home network into separate VLANs for lab servers, personal devices, and IoT gear.",
+    content: "What worked, what broke, and the firewall rules that finally made the setup stable.",
+    date: "Apr 2026",
+    category: "networking",
+    tags: ["Networking", "VLAN", "Firewall"],
     color: "from-purple-500/20 to-pink-500/20",
     readTime: "8 min",
   },
   {
     id: 3,
-    title: "Next.js 16 + Tailwind v4",
+    title: "XSS testing workflow for beginner bug hunters",
     excerpt:
-      "Exploring the new features in Next.js 16 and migrating to Tailwind CSS v4's new configuration system. Performance improvements and developer experience.",
-    content: "Migration guide and new features overview...",
-    date: "Dec 2024",
-    category: "frontend",
-    tags: ["Next.js", "Tailwind", "TypeScript"],
+      "A practical routine for finding reflected and stored XSS in small apps, with safe payload testing and browser-side verification.",
+    content: "Step-by-step test process mapped to common input points, output contexts, and response validation.",
+    date: "Apr 2026",
+    category: "web-security",
+    tags: ["Web Security", "XSS", "Bug Hunting"],
     color: "from-primary/20 to-purple-500/20",
-    readTime: "6 min",
-  },
-  {
-    id: 4,
-    title: "Self-hosting LLMs with FastAPI",
-    excerpt:
-      "Running Llama2 locally and building a personal chatbot API for natural language tasks. Complete setup guide with Docker containerization.",
-    content: "Step-by-step guide to self-hosting LLMs...",
-    date: "Oct 2023",
-    category: "ai",
-    tags: ["Python", "FastAPI", "Llama2", "Docker"],
-    color: "from-orange-500/20 to-amber-500/20",
-    readTime: "10 min",
-  },
-  {
-    id: 5,
-    title: "Docker multi-stage builds for Next.js",
-    excerpt:
-      "Optimizing container sizes and build times with multi-stage Docker builds. Production-ready configurations for Next.js applications.",
-    content: "Docker optimization techniques...",
-    date: "Sep 2023",
-    category: "devops",
-    tags: ["Docker", "Next.js", "CI/CD"],
-    color: "from-cyan-500/20 to-blue-500/20",
     readTime: "7 min",
   },
   {
-    id: 6,
-    title: "React Server Components deep dive",
+    id: 4,
+    title: "Building a tiny blue-team triage playbook",
     excerpt:
-      "Understanding the paradigm shift with RSC. How server components change data fetching patterns and improve performance.",
-    content: "Complete guide to React Server Components...",
-    date: "Aug 2023",
-    category: "frontend",
-    tags: ["React", "RSC", "Next.js"],
-    color: "from-indigo-500/20 to-purple-500/20",
+      "How I structure first-response triage for suspicious log events: validate, scope, contain, and document.",
+    content: "Simple incident notes template and a repeatable triage flow for low-volume environments.",
+    date: "Mar 2026",
+    category: "blue-team",
+    tags: ["Blue Team", "SOC", "Incident Response"],
+    color: "from-orange-500/20 to-amber-500/20",
     readTime: "9 min",
+  },
+  {
+    id: 5,
+    title: "TryHackMe room notes: enumeration first",
+    excerpt:
+      "Lessons learned from early CTF rooms: better enumeration, cleaner note-taking, and avoiding rabbit holes.",
+    content: "A repeatable command sequence for recon, service checks, and post-exploitation validation.",
+    date: "Feb 2026",
+    category: "ctf",
+    tags: ["CTF", "Enumeration", "Pentesting"],
+    color: "from-cyan-500/20 to-blue-500/20",
+    readTime: "5 min",
+  },
+  {
+    id: 6,
+    title: "Security toolkit I use weekly",
+    excerpt:
+      "A personal shortlist of tools I actually use every week (nmap, Wireshark, Burp, ffuf) and when each one is most useful.",
+    content: "Quick usage patterns, default flags, and mistakes I try to avoid as a beginner practitioner.",
+    date: "Jan 2026",
+    category: "tools",
+    tags: ["Tools", "Nmap", "Burp Suite", "ffuf"],
+    color: "from-indigo-500/20 to-purple-500/20",
+    readTime: "6 min",
+  },
+  {
+    id: 7,
+    title: "Homelab backup strategy before security experiments",
+    excerpt:
+      "How I snapshot and back up lab systems before running risky tests so I can recover fast after failures.",
+    content: "A practical backup schedule, retention plan, and restore checks for small self-hosted environments.",
+    date: "Jan 2026",
+    category: "homelab",
+    tags: ["Homelab", "Backups", "Infrastructure"],
+    color: "from-emerald-500/20 to-teal-500/20",
+    readTime: "7 min",
   },
 ]
