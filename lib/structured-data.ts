@@ -12,12 +12,12 @@ export function generateBlogPostStructuredData(post: BlogPost, url: string) {
     author: {
       '@type': 'Person',
       name: post.author.name,
-      url: 'https://github.com/ehsanghaffar',
+      url: 'https://github.com/cyberdr1ft3r',
     },
     publisher: {
       '@type': 'Person',
-      name: 'Ali Boughlalah',
-      url: 'https://eindev.ir',
+      name: 'Cyber Drifter',
+      url: 'https://cyberdr1ft3r.com',
     },
     mainEntityOfPage: {
       '@type': 'WebPage',
@@ -38,8 +38,8 @@ export function generateWebsiteStructuredData(url: string) {
     url: url,
     author: {
       '@type': 'Person',
-      name: 'Ali Boughlalah',
-      url: 'https://github.com/ehsanghaffar',
+      name: 'Cyber Drifter',
+      url: 'https://github.com/cyberdr1ft3r',
     },
     potentialAction: {
       '@type': 'SearchAction',
@@ -56,15 +56,15 @@ export function generatePersonStructuredData() {
   return {
     '@context': 'https://schema.org',
     '@type': 'Person',
-    name: 'Ali Boughlalah',
-    url: 'https://eindev.ir',
-    image: 'https://eindev.ir/developer-portrait.png',
+    name: 'Cyber Drifter',
+    url: 'https://cyberdr1ft3r.com',
+    image: 'https://cyberdr1ft3r.com/og-default.png',
     sameAs: [
-      'https://github.com/ehsanghaffar',
-      'https://twitter.com/ehsanghaffar',
-      'https://linkedin.com/in/ehsanghaffar',
+      'https://github.com/cyberdr1ft3r',
+      'https://x.com/cyberdr1ft3r',
+      'https://linkedin.com/in/TODO_LINKEDIN',
     ],
-    jobTitle: 'Software Engineer',
+    jobTitle: 'Security Engineer',
     worksFor: {
       '@type': 'Organization',
       name: 'CyberDr1ft3r',

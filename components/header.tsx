@@ -14,13 +14,12 @@ const navItems = [
   { label: "Projects", href: "/projects" },
   { label: "Workbench", href: "/workbench" },
   { label: "About", href: "/about" },
-  { label: "Contact", href: "/contact" },
-]
+  ]
 
 const socialLinks = [
   { label: "GitHub", href: "https://github.com/cyberdr1ft3r", icon: Github },
-  { label: "LinkedIn", href: "https://linkedin.com/in/cyberdr1ft3r", icon: Linkedin },
-  { label: "Email", href: "mailto:hello@cyberdr1ft3r.com", icon: Mail },
+  { label: "LinkedIn", href: "https://linkedin.com/in/TODO_LINKEDIN", icon: Linkedin },
+  { label: "Email", href: "mailto:contact@cyberdr1ft3r.com", icon: Mail },
 ]
 
 
