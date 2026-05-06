@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   description:
     "A digital workshop where code meets curiosity. Experiments, prototypes, and open-source artifacts by Ali Boughlalah.",
   keywords: ["Software Engineering", "Web Development", "Next.js", "React", "TypeScript", "AI", "Machine Learning", "Systems Programming", "Code Experiments"],
-  authors: [{ name: "Ali Boughlalah", url: "https://github.com/ehsanghaffar" }],
+  authors: [{ name: "Ali Boughlalah", url: "TODO_GITHUB" }],
   creator: "Ali Boughlalah",
   publisher: "Ali Boughlalah",
   generator: "v0.app",
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "CyberDr1ft3r — Ali Boughlalah's Digital Laboratory",
     description: "A digital workshop where code meets curiosity. Experiments, prototypes, and open-source artifacts.",
-    creator: "@ehsanghaffar",
+    creator: "TODO_X",
     images: ["/og-image.png"],
   },
   robots: {

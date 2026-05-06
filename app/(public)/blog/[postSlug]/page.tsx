@@ -56,7 +56,7 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
       title: post.title,
       description: post.excerpt,
       images: [ogImageUrl],
-      creator: "@ehsanghaffar",
+      creator: "TODO_X",
     },
     alternates: {
       canonical: postUrl,
